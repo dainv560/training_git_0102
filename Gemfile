@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.0'
+gem 'rails', '4.1.1'
 group :production do
   gem 'rails_12factor', '0.0.2'
 end
@@ -33,11 +33,12 @@ gem 'therubyracer'
 gem 'execjs'
 gem 'resque'
 gem 'bootstrap-sass', '2.3.2.0'
-gem 'bcrypt-ruby', '3.0.1'
+gem 'bcrypt-ruby', '3.1.2'
 gem 'guard'
 gem 'faker', '1.1.2'
 gem 'will_paginate', '3.0.4'
 gem 'bootstrap-will_paginate', '0.0.9'
+gem 'pry'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
