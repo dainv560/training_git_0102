@@ -5,19 +5,19 @@
   <div class="span6 offset3">
      <%= form_for(@user) do |f| %>
      <%= render 'shared/error_messages', object: f.object %>
-      <%= f.label :name, "Ho ten" %>
+      <%= f.label :name, "Full name" %>
       <%= f.text_field :name %>
 
-      <%= f.label :email, "Email (Hom Thu Dien Tu)" %>
+      <%= f.label :email, "Email" %>
       <%= f.text_field :email %>
 
-      <%= f.label :password, "Mat Khau" %>
+      <%= f.label :password, "Password" %>
       <%= f.password_field :password %>
 
-      <%= f.label :password_confirmation, "Xac Nhan Mat Khau" %>
+      <%= f.label :password_confirmation, "Re-enter Password" %>
       <%= f.password_field :password_confirmation %>
 
-      <%= f.submit "Tao tai khoan", class: "btn btn-large btn-primary" %>
+      <%= f.submit "Create Account", class: "btn btn-large btn-primary" %>
     <% end %>
   </div>
 </div>

@@ -9,7 +9,7 @@ class User < ActiveRecord::Base
     class_name:  "Relationship", dependent:   :destroy
   has_many :followers, through: :reverse_relationships, source: :follower
 
-  validates :name, presence: true
+  validates :name, presence: true, uniqueness: true, length: { maximum: 64 }
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   validates :email, presence: true, format: { with: VALID_EMAIL_REGEX }, uniqueness: true
   has_secure_password
